@@ -4,33 +4,41 @@
     "slug": "currency-converter",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/currencyConverter.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/currencyConverter.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true
     },
+    "androidStatusBar": {
+      "translucent": false
+    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/currencyConverter.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "currencyconverter.com"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/currencyConverter.png"
     },
-    "plugins": [
-      "expo-router"
-    ],
+    "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d4d35ff9-5e57-4903-8296-9b3d3c0d1ae0"
+      }
+    },
+    "owner": "11pawan"
   }
 }
