@@ -1,6 +1,5 @@
-import { Text, View } from "react-native";
-import WelcomeScreen from "./components/screens/welcomeScreen";
+import MainStackNavigation from "./config/navigation";
 
 export default function Index() {
-  return <WelcomeScreen />;
+  return <MainStackNavigation />;
 }

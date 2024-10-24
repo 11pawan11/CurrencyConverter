@@ -1,3 +1,4 @@
+import colors from "@/app/constants/colors";
 import {
   StyleSheet,
   Text,
@@ -10,7 +11,7 @@ interface InputProps {
   text: string;
   value: string;
   onButtonPress: () => void;
-  onChangeText: (text:string) => void;
+  onChangeText: (text: string) => void;
   editable: boolean;
   keyboardType: any;
 }
@@ -48,31 +49,33 @@ const inputType = StyleSheet.create({
     backgroundColor: "lightgray",
     borderRadius: 5,
     flexDirection: "row",
-    borderRightColor: "black",
+    marginVertical: 5,
+    color: "white",
   },
   button: {
     backgroundColor: "white",
-    padding: 5,
+    padding: 20,
     borderRightWidth: 1,
     borderColor: "gray",
     borderTopLeftRadius: 5,
     borderBottomLeftRadius: 5,
-  },
-  currencyInputValue: {
-    padding: 5,
-    borderTopRightRadius: 5,
-    borderBottomRightRadius: 5,
-  },
-  textButton: {
-    fontWeight: "medium",
-    fontSize: 15,
-    alignItems: "center",
-    alignContent: "center",
     justifyContent: "center",
   },
+  currencyInputValue: {
+    padding: 10,
+    borderTopRightRadius: 5,
+    borderBottomRightRadius: 5,
+    borderWidth: 0,
+    fontSize: 16,
+    width: "60%",
+    color: "black",
+  },
+  textButton: {
+    fontWeight: "bold",
+    fontSize: 18,
+  },
   containerDisabled: {
-    // backgroundColor: "#f0f0f0",
-    backgroundColor: "red",
+    backgroundColor:colors.somegray
   },
 });
 export default InputText;
